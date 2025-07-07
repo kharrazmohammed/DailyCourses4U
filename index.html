@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@DailyCourses4U - Premium Course Collection</title>
+    <meta name="description" content="Daily Free Premium Courses. Learn. Grow. Repeat. Access top-quality courses in YouTube automation, dropshipping, cybersecurity, trading, AI, SEO, and more." />
+    <meta name="keywords" content="free courses, premium courses, YouTube automation, dropshipping, cybersecurity, trading, AI, SEO, graphic design, TikTok, SMMA, Facebook marketing" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="@DailyCourses4U - Premium Course Collection" />
+    <meta property="og:description" content="Daily Free Premium Courses. Learn. Grow. Repeat." />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="@DailyCourses4U - Premium Course Collection" />
+    <meta property="twitter:description" content="Daily Free Premium Courses. Learn. Grow. Repeat." />
+    
+    <!-- Instagram optimized -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <style>
+      /* Prevent zoom on mobile */
+      @media screen and (max-width: 768px) {
+        input, select, textarea {
+          font-size: 16px !important;
+        }
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Loading state */
+      .loading {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .loaded {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="loading">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Remove loading class when page loads
+      window.addEventListener('load', () => {
+        document.body.classList.remove('loading');
+        document.body.classList.add('loaded');
+      });
+    </script>
+  </body>
+</html>
